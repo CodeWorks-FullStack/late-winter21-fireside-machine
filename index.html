@@ -26,9 +26,18 @@
   <main>
     <div class="container-fluid">
       <div class="row">
-        <div class="col-12">
-          <div id="app"></div>
+        <div class="col-12 bg-dark">
+          <div class=" text-success p-4 d-flex">
+            <h3>TOTAL: $<span id="total">0.00</span></h3>
+            <button class="btn btn-outline-success ms-5" onclick="app.snacksController.addMoney(.25)">$0.25</button>
+            <button class="btn btn-outline-success ms-5" onclick="app.snacksController.addMoney(1)">$1.00</button>
+            <button class="btn btn-outline-danger ms-5" onclick="app.snacksController.returnMoney()">Get Change</button>
+          </div>
         </div>
+      </div>
+      <div class="row" id="snacks">
+        <!-- STUB Snack Template -->
+        <!-- ---------------------- end template -->
       </div>
     </div>
   </main>
@@ -37,7 +46,6 @@
       <p><small>Made with 💖 by Codeworks</small></p>
     </div>
   </footer>
-
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
     crossorigin="anonymous"></script>
